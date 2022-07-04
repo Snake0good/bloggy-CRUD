@@ -1,4 +1,3 @@
-import { useState } from "react"
 import Navbar from "../components/Navbar"
 import { useNavigate, useLocation } from 'react-router-dom'
 import { FaEdit, FaTrashAlt } from 'react-icons/fa'
@@ -28,7 +27,7 @@ function Fullpage() {
             state: {
                 id: id,
                 name: name,
-                title, title, 
+                title: title, 
                 text: text
             }
         })

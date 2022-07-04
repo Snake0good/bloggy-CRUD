@@ -46,7 +46,7 @@ function Blogs() {
             state: {
                 id: id,
                 name: name,
-                title, title, 
+                title: title, 
                 text: text
             }
         })
@@ -59,7 +59,7 @@ function Blogs() {
             state: {
                 id: id,
                 name: name,
-                title, title, 
+                title: title, 
                 text: text
             }
         })

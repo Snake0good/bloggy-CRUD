@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+require('dotenv').config()
 
 module.exports = async () => {
     const connectionParams = {
@@ -6,7 +7,7 @@ module.exports = async () => {
         useUnifiedTopology: true,
     };
     try {
-        await mongoose.connect(process.env.DB, connectionParams)
+        await mongoose.connect(process.env.MONGO_URI, connectionParams)
         console.log("Connected to Database")
     } catch(err) {
         console.log("Couldn't connect to Database")

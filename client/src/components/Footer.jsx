@@ -1,5 +1,4 @@
 import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 
 function Footer() {
