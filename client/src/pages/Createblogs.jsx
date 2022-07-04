@@ -23,7 +23,7 @@ function Createblogs() {
     }
 
     // post the blog
-    const domain = 'https://bloggy-crud.herokuapp.com/'
+    const domain = 'https://bloggy-crud.herokuapp.com'
     const onSubmit = async (e) => {
         e.preventDefault()
 

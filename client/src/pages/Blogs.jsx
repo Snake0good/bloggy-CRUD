@@ -11,7 +11,7 @@ function Blogs() {
     const navigate = useNavigate()
 
     // get all blogs and display
-    const domain = 'https://bloggy-crud.herokuapp.com/'
+    const domain = 'https://bloggy-crud.herokuapp.com'
     const fetchBlogs = () => {
         // fetch("http://localhost:3001/api/blogs")
         fetch(`${domain}/api/blogs`)
