@@ -9,8 +9,9 @@ function Fullpage() {
     const navigate = useNavigate()
 
     // delete the blog
+    const domain = 'https://bloggy-crud.herokuapp.com/'
     const deleteBlog = async (id) => {
-        await fetch(`http://localhost:3001/api/blogs/${id}`, {
+        await fetch(`${domain}/api/blogs/${id}`, {
             method: 'DELETE', 
             headers: {
                 'Content-Type': 'application/json'

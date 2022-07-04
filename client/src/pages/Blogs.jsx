@@ -11,8 +11,10 @@ function Blogs() {
     const navigate = useNavigate()
 
     // get all blogs and display
+    const domain = 'https://bloggy-crud.herokuapp.com/'
     const fetchBlogs = () => {
-        fetch("http://localhost:3001/api/blogs")
+        // fetch("http://localhost:3001/api/blogs")
+        fetch(`${domain}/api/blogs`)
         .then((response) => response.json())
         .then((data) => {
             setBlogs(data)
@@ -28,7 +30,7 @@ function Blogs() {
 
     // delete the blog
     const deleteBlog = async (id) => {
-        await fetch(`http://localhost:3001/api/blogs/${id}`, {
+        await fetch(`${domain}/api/blogs/${id}`, {
             method: 'DELETE', 
             headers: {
                 'Content-Type': 'application/json'

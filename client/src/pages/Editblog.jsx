@@ -25,10 +25,12 @@ function Editblogs() {
     }
 
     // post the blog
+    const domain = 'https://bloggy-crud.herokuapp.com/'
     const onSubmit = async (e) => {
         e.preventDefault()
 
-        await fetch(`http://localhost:3001/api/blogs/${id}`, {
+        // await fetch(`http://localhost:3001/api/blogs/${id}`, {
+        await fetch(`${domain}/api/blogs/${id}`, {
             method: 'PUT', 
             headers: {
                 'Content-Type': 'application/json'
